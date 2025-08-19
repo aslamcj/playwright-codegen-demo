@@ -1,0 +1,46 @@
+{
+  "name": "playwright-demo-framework",
+  "version": "1.0.0",
+  "description": "Beginner-friendly Playwright automation framework with JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:debug": "npx playwright test --debug",
+    "test:ui": "npx playwright test --ui",
+    "test:demo": "npx playwright test --headed --slowMo=1000",
+    "test:specific": "npx playwright test --grep",
+    "test:enhanced": "npx playwright test tests/example4-enhanced.spec.js",
+    "test:screenshots": "npx playwright test tests/example4-fixed-screenshots.spec.js",
+    "test:simple": "npx playwright test tests/simple-screenshot-test.spec.js",
+    "codegen": "npx playwright codegen",
+    "codegen:saucedemo": "npx playwright codegen https://www.saucedemo.com",
+    "codegen:todomvc": "npx playwright codegen https://todomvc.com/examples/react/#/",
+    "codegen:demoqa": "npx playwright codegen https://www.publicissapient.com/",
+    "codegen:demo-mode": "npx playwright codegen --viewport-size=1280,720 --device=\"Desktop Chrome\"",
+    "codegen:mobile": "npx playwright codegen --device=\"iPhone 12\" https://www.publicissapient.com/",
+    "codegen:tablet": "npx playwright codegen --device=\"iPad Pro\" https://www.publicissapient.com/",
+    "report": "npx playwright show-report",
+    "install": "npx playwright install",
+    "record": "npx playwright test --headed --video=on",
+    "setup": "npm install && npx playwright install"
+  },
+  "keywords": [
+    "playwright",
+    "automation",
+    "testing",
+    "javascript",
+    "demo",
+    "codegen",
+    "no-code",
+    "beginner-friendly"
+  ],
+  "author": "Demo Framework",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.40.0"
+  },
+  "dependencies": {
+    "fs-extra": "^11.1.1"
+  }
+}
