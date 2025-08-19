@@ -7,7 +7,7 @@ Perfect for presentations, training sessions, and demonstrating the power of Pla
 ## 🚀 Quick Start
 
 ### Prerequisites
-- Node.js (version 14 or higher)
+- Node.js (version 18 or higher)
 - No coding experience required for basic usage!
 
 ### Installation
@@ -22,13 +22,15 @@ npm run setup
 ### Your First Test (5 minutes)
 ```bash
 # Open codegen and start recording your first test
-npm run codegen:saucedemo
+npx playwright codegen https://www.google.com  --output=tests/example1.spec.js
 
-# Click around the SauceDemo site to record actions
 # Close codegen window when done
+# File example1.spec.js will saved in tests folder directory.
 
 # Run your generated test
 npm run test:headed
+or
+npm run test
 ```
 
 **Congratulations! You just created and ran an automated test without writing any code!**
